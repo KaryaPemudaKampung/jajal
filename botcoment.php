@@ -62,7 +62,7 @@ $ambil = json_decode($ambil, true);
 foreach($ambil['data'] as $data) {
 	$stat_id = $data['id'];
 	$post_id = explode("_", $stat_id);
-	$msg=$msgx . "\n".;
+	$msg=$msgx;
 	$url = "https://graph.facebook.com/".$post_id[1]."/comments";
 $var="method=POST&message=".$msg."&access_token=".$token;	
 	
